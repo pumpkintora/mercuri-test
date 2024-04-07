@@ -36,7 +36,9 @@ export default function SearchHistory({ setSearchResult }) {
 
   return (
     <>
-      <p className='subtitle' style={{ textAlign: 'left' }}>Search History</p>
+      <p className="subtitle" style={{ textAlign: "left" }}>
+        Search History
+      </p>
       {searchHistory
         .sort((a, b) => b.dt - a.dt)
         .map((sh, i) => (
@@ -49,13 +51,11 @@ export default function SearchHistory({ setSearchResult }) {
                 {new Date(sh.dt * 1000).toLocaleTimeString()}
               </span>
             </div>
-            {/* <div className="Search-history-item-buttons"> */}
-              <SearchButton
-                onClickFunc={() => handleSearchByHistory(sh)}
-                style={{ marginRight: "5px" }}
-              />
-              <DeleteButton onClickFunc={() => handleDeleteHistory(sh)} />
-            {/* </div> */}
+            <SearchButton
+              onClickFunc={() => handleSearchByHistory(sh)}
+              style={{ marginRight: "5px" }}
+            />
+            <DeleteButton onClickFunc={() => handleDeleteHistory(sh)} />
           </div>
         ))}
     </>

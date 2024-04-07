@@ -17,3 +17,10 @@ code {
 *::after {
   box-sizing: inherit;
 }
+
+/* mobile has extra space at right side */
+@media (max-width: 600px) {
+  html, body {
+  overflow-x: hidden;
+  }
+}
