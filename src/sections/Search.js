@@ -20,6 +20,7 @@ export default function Search({ setSearchResult, setSearchResultError }) {
         .then((res) => res.json())
         .then((result) => {
           setSearchResult(result);
+          // push to local storage, no need to check exists because already done in parent
           let arr = JSON.parse(localStorage.getItem("searchHistory"));
           arr.push(result);
           localStorage.setItem("searchHistory", JSON.stringify(arr));

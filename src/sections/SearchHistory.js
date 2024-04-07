@@ -14,6 +14,7 @@ export default function SearchHistory({ setSearchResult }) {
       .then((result) => {
         setSearchResult(result);
         setSearchHistory((prev) => {
+          // push to local storage, no need to check exists because already done in parent
           const arrResult = [...prev, result];
           localStorage.setItem("searchHistory", JSON.stringify(arrResult));
           return arrResult;

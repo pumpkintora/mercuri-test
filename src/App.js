@@ -11,6 +11,7 @@ function App() {
   const [searchResultError, setSearchResultError] = useState(null);
   
   useEffect(() => {
+    // make sure search history exists in local storage
     let store = localStorage.getItem("searchHistory")
     if (!localStorage.getItem("searchHistory")) {
       localStorage.setItem("searchHistory", JSON.stringify([]));
