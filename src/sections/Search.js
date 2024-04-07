@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import countries from "../asset/countries";
+// components
 import SearchButton from "../components/SearchButton";
+import ThemeSwitch from "../components/ThemeSwitch";
 import "../css/Search.css";
 
 export default function Search({ setSearchResult, setSearchResultError }) {
@@ -66,6 +68,7 @@ export default function Search({ setSearchResult, setSearchResultError }) {
           onChange={handleCountryChange}
         />
         <SearchButton onClickFunc={search} />
+        <ThemeSwitch style={{marginLeft: '0.4em' }} />
       </div>
     </div>
   );

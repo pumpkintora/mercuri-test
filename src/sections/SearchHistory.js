@@ -49,13 +49,13 @@ export default function SearchHistory({ setSearchResult }) {
                 {new Date(sh.dt * 1000).toLocaleTimeString()}
               </span>
             </div>
-            <div className="Search-history-item-buttons">
+            {/* <div className="Search-history-item-buttons"> */}
               <SearchButton
                 onClickFunc={() => handleSearchByHistory(sh)}
                 style={{ marginRight: "5px" }}
               />
               <DeleteButton onClickFunc={() => handleDeleteHistory(sh)} />
-            </div>
+            {/* </div> */}
           </div>
         ))}
     </>

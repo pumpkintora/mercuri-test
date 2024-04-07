@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+// sections
 import Search from "./sections/Search";
 import SearchResult from "./sections/SearchResult";
 import SearchHistory from "./sections/SearchHistory";
+// contexts
+import { ThemeContext } from "./contexts/ThemeContext";
 import "./App.css";
 
 function App() {
-  const defaultDark = window.matchMedia('(prefer-color-scheme: dark)').matches;
-  const [theme, setTheme] = useState(defaultDark ? 'dark' : 'light')
+  const { theme } = useContext(ThemeContext)
   const [searchResult, setSearchResult] = useState(null);
   const [searchResultError, setSearchResultError] = useState(null);
   
@@ -28,7 +30,7 @@ function App() {
         <Search
           setSearchResult={setSearchResult}
           setSearchResultError={setSearchResultError}
-          setTheme={setTheme}
+          // setTheme={setTheme}
         />
         <SearchResult
           searchResult={searchResult}

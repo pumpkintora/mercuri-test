@@ -65,6 +65,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Search-result {
+    padding: 1em;
+  }
   .Search-result-responsive {
     display: flex;
     flex-direction: column-reverse;

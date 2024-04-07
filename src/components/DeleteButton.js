@@ -5,7 +5,7 @@ import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 export default function DeleteButton({ onClickFunc }) {
   return (
     <button className="round-btn" onClick={onClickFunc}>
-      <FontAwesomeIcon icon={faDeleteLeft} fontSize={'1.5em'} />
+      <FontAwesomeIcon icon={faDeleteLeft} />
     </button>
   );
 }
