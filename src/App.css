@@ -1,0 +1,151 @@
+:root {
+  --background: url(./asset/bg-light.png);
+  --text-dark: black;
+  --text-normal: grey;
+  --text-light: #b8b8b8;
+  --accent: purple;
+}
+
+[data-theme="dark"] {
+  --background: url(./asset/bg-dark.png);
+  --text-dark: #b8b8b8;
+  --text-normal: grey;
+  --text-light: black;
+  --accent: darkred;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1em;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.headline {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  font-weight: 420;
+}
+
+.caption {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-container {
+  width: 80%;
+  max-width: 50em;
+  height: 60vh;
+  padding: 2em;
+  margin: 2em;
+}
+
+.Glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.round-btn {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  width: 2em;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 50%;
+  transition: color 0.1s;
+  cursor: pointer;
+}
+
+.error {
+  background: rgba(230, 20, 20, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(230, 20, 20, 0.31);
+  padding-left: 1.6em;
+  margin-bottom: 3em;
+  color: rgba(230, 20, 20, 0.7);
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .headline {
+    font-size: 3.6em;
+  }
+  .title {
+    font-size: 1.6em;
+  }
+  .subtitle {
+    font-size: 1em;
+  }
+  .caption {
+    font-size: 0.8em;
+  }
+  .round-btn {
+    font-size: 0.8em;
+    width: 1.6em;
+    height: 1.6em;
+  }
+}

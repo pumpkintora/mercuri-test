@@ -1,0 +1,29 @@
+.Search-history-item {
+  margin: 1em auto;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Search-history-item-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-right: 1em;
+}
+
+.Search-history-item-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .Search-history-item-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+}
