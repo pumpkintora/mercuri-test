@@ -1,5 +1,3 @@
-# Frontend Coding Test with Merquri
-
 Using React and pure CSS.
 
 ## Project Structure
